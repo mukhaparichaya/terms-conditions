@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MarkAttend - Terms and Conditions</title>
+    <link rel="shortcut icon" href="markattend.png" type="image/x-icon">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+        :root {
+            --primary-color: #000000;
+            --secondary-color: #396F5F;
+            --accent-color: #396F5F;
+            --background-color: #FBD597;
+            --text-color: #333333;
+            --light-bg: #fff8ee;
+            --border-radius: 12px;
+            --box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.8;
+            color: var(--text-color);
+            background-color: var(--background-color);
+            padding: 0;
+            margin: 0;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--primary-color) 30%, var(--secondary-color) 100%);
+            color: var(--background-color);
+            padding: 3rem 0;
+            text-align: center;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        header h1 {
+            font-size: 2.8rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+            margin-bottom: 0.5rem;
+        }
+
+        header .subtitle {
+            font-size: 1.3rem;
+            font-weight: 400;
+            opacity: 0.9;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 3rem auto;
+            padding: 0;
+            background-color: transparent;
+            animation: fadeIn 0.7s ease-in-out;
+        }
+
+        .welcome-text {
+            background-color: var(--light-bg);
+            padding: 2rem;
+            border-radius: var(--border-radius);
+            margin-bottom: 2rem;
+            box-shadow: var(--box-shadow);
+            border-left: 5px solid var(--secondary-color);
+            font-size: 1.1rem;
+        }
+
+        .section {
+            margin-bottom: 2rem;
+            padding: 2rem;
+            background-color: white;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border-top: 5px solid var(--primary-color);
+        }
+
+        .section:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+        }
+
+        .section:nth-child(even) {
+            border-top-color: var(--secondary-color);
+        }
+
+        .section-title {
+            font-size: 1.4rem;
+            font-weight: 600;
+            margin-bottom: 1.2rem;
+            color: var(--primary-color);
+            display: flex;
+            align-items: center;
+        }
+
+        .section-title::before {
+            content: "";
+            display: inline-block;
+            width: 8px;
+            height: 25px;
+            background-color: var(--secondary-color);
+            margin-right: 12px;
+            border-radius: 4px;
+        }
+
+        ul {
+            margin-left: 1.5rem;
+            list-style: none;
+        }
+
+        li {
+            margin-bottom: 0.8rem;
+            position: relative;
+            padding-left: 1.5rem;
+        }
+
+        li::before {
+            content: "•";
+            color: var(--secondary-color);
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+            font-size: 1.2rem;
+        }
+
+        .content-wrapper {
+            background-color: white;
+            border-radius: var(--border-radius);
+            padding: 3rem;
+            margin-bottom: 2rem;
+            box-shadow: var(--box-shadow);
+        }
+
+        .contact-info {
+            background-color: var(--light-bg);
+            padding: 1.5rem;
+            border-radius: var(--border-radius);
+            border: 1px solid rgba(57, 111, 95, 0.3);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .email {
+            color: var(--secondary-color);
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            font-size: 1.1rem;
+        }
+
+        .email:hover {
+            color: var(--primary-color);
+            transform: translateY(-2px);
+        }
+
+        footer {
+            text-align: center;
+            padding: 2.5rem;
+            margin-top: 3rem;
+            color: var(--background-color);
+            font-size: 0.9rem;
+            background: linear-gradient(135deg, var(--primary-color) 30%, var(--secondary-color) 100%);
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                margin: 2rem 1rem;
+            }
+
+            header h1 {
+                font-size: 2rem;
+            }
+
+            .content-wrapper {
+                padding: 1.5rem;
+            }
+            
+            .section {
+                padding: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>MarkAttend</h1>
+        <p class="subtitle">Terms and Conditions</p>
+    </header>
+    
+    <div class="container">
+        <div class="content-wrapper">
+            
+            <p class="welcome-text">
+                Welcome! Please read these Terms and Conditions ("Terms") carefully before using the application. By accessing or using the app, you agree to be bound by these Terms.
+            </p>
+            
+            <div class="section">
+                <div class="section-title">1. Acceptance of Terms</div>
+                <p>By using the app, you confirm that:</p>
+                <ul>
+                    <li>You are an authorized faculty member or administrator of your institution.</li>
+                    <li>You have the legal authority to manage attendance for students in your department or class.</li>
+                </ul>
+            </div>
+            
+            <div class="section">
+                <div class="section-title">2. App Usage</div>
+                <p>This app allows teachers to:</p>
+                <ul>
+                    <li>Input class details (subject name, department, batch, division) for mark the attend.</li>
+                    <li>Trigger the attendance system to capture student presence via face recognition.</li>
+                </ul>
+                <p>All actions taken via this app are logged for accountability and audit purposes.</p>
+            </div>
+            
+            <div class="section">
+                <div class="section-title">3. Data Privacy</div>
+                <ul>
+                    <li>The app does not share biometric data directly.</li>
+                    <li>Facial embeddings and images are securely processed and stored on the connected device (e.g. Raspberry Pi) and cloud.</li>
+                    <li>Personal information such as student IDs, subject names, and attendance logs are stored in compliance with institutional and national privacy policies.</li>
+                </ul>
+            </div>
+            
+            <div class="section">
+                <div class="section-title">4. Teacher Responsibilities</div>
+                <ul>
+                    <li>Ensure that accurate class and subject information is submitted.</li>
+                    <li>Use the app only for official academic purposes.</li>
+                    <li>Inform students that attendance will be captured via face recognition.</li>
+                </ul>
+            </div>
+            
+            <div class="section">
+                <div class="section-title">5. Limitations of Liability</div>
+                <p>The developers and providers of this app are not liable for:</p>
+                <ul>
+                    <li>Errors due to poor lighting, obstruction, or misidentification during capture.</li>
+                    <li>Device malfunctions or network issues during attendance recording.</li>
+                    <li>Misuse of the app by unauthorized users.</li>
+                </ul>
+            </div>
+            
+            <div class="section">
+                <div class="section-title">6. Updates and Modifications</div>
+                <p>We may update these Terms from time to time. Continued use of the app after changes constitutes acceptance of the new terms.</p>
+            </div>
+
+            <div class="section">
+                <div class="section-title">7. Misuse and Unauthorized Access</div>
+                <p>We take misuse and unauthorized access seriously. Any attempt to hack, manipulate, or gain unauthorized access to the app or its data will result in immediate termination of access and may lead to legal action. Users are expected to:</p>
+                <ul>
+                    <li>Refrain from attempting to bypass security measures or exploit vulnerabilities.</li>
+                    <li>Report any suspected security issues to the appropriate authorities or support team immediately.</li>
+                    <li>Use the app responsibly and in accordance with institutional policies.</li>
+                </ul>
+                <p>Failure to comply with these guidelines may result in disciplinary action and/or legal consequences.</p>
+            </div>
+            
+            <div class="section">
+                <div class="section-title">8. Contact Information</div>
+                <p>For support or inquiries, contact your institution's IT/Admin department or reach us at:</p>
+                <div class="contact-info">
+                    <a href="mailto:thewallseye@gmail.com" class="email">📧 thewallseye@gmail.com</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <p>© 2025 The Wall's Eye. All rights reserved.</p>
+    </footer>
+</body>
+</html>
