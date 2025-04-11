@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MarkMe - Terms and Conditions</title>
+    <link rel="shortcut icon" href="markme.png" type="image/x-icon">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+        :root {
+            --primary-color: #000000;
+            --secondary-color: #396F5F;
+            --background-color: #FBD597;
+            --text-color: #333333;
+            --light-bg: #fff8ee;
+            --border-radius: 12px;
+            --box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+            --transition: all 0.3s ease;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.8;
+            color: var(--text-color);
+            background-color: var(--background-color);
+            padding: 0;
+            margin: 0;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--primary-color) 30%, var(--secondary-color) 100%);
+            color: var(--background-color);
+            padding: 3rem 0;
+            text-align: center;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+            position: relative;
+            overflow: hidden;
+        }
+
+        header::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0) 70%);
+            pointer-events: none;
+        }
+
+        header h1 {
+            font-size: 2.8rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+            margin-bottom: 0.5rem;
+            position: relative;
+        }
+
+        header .subtitle {
+            font-size: 1.3rem;
+            font-weight: 400;
+            opacity: 0.9;
+            position: relative;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 3rem auto;
+            padding: 0;
+            background-color: transparent;
+            animation: fadeIn 0.7s ease-in-out;
+        }
+
+        .welcome-text {
+            background-color: var(--light-bg);
+            padding: 2rem;
+            border-radius: var(--border-radius);
+            margin-bottom: 2rem;
+            box-shadow: var(--box-shadow);
+            border-left: 5px solid var(--secondary-color);
+            font-size: 1.1rem;
+            line-height: 1.9;
+        }
+
+        .section {
+            margin-bottom: 2rem;
+            padding: 2rem;
+            background-color: white;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+            transition: var(--transition);
+            border-top: 5px solid var(--primary-color);
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* .section::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 30%;
+            height: 5px;
+            background-color: var(--secondary-color);
+            transition: var(--transition);
+        } */
+
+        /* .section:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+        } */
+
+        /* .section:hover::after {
+            width: 100%;
+        } */
+
+        .section:nth-child(even) {
+            border-top-color: var(--secondary-color);
+        }
+
+        .section-title {
+            font-size: 1.4rem;
+            font-weight: 600;
+            margin-bottom: 1.2rem;
+            color: var(--primary-color);
+            display: flex;
+            align-items: center;
+        }
+
+        .section-title::before {
+            content: "";
+            display: inline-block;
+            width: 8px;
+            height: 25px;
+            background-color: var(--secondary-color);
+            margin-right: 12px;
+            border-radius: 4px;
+        }
+
+        ul {
+            margin-left: 1.5rem;
+            list-style: none;
+        }
+
+        li {
+            margin-bottom: 0.8rem;
+            position: relative;
+            padding-left: 1.5rem;
+        }
+
+        li::before {
+            content: "•";
+            color: var(--secondary-color);
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+            font-size: 1.2rem;
+        }
+
+        .warning-box {
+            background-color: rgba(0, 0, 0, 0.05);
+            border-left: 4px solid #ff9800;
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 4px;
+        }
+
+        .content-wrapper {
+            background-color: white;
+            border-radius: var(--border-radius);
+            padding: 3rem;
+            margin-bottom: 2rem;
+            box-shadow: var(--box-shadow);
+        }
+
+        .contact-info {
+            background-color: var(--light-bg);
+            padding: 1.5rem;
+            border-radius: var(--border-radius);
+            border: 1px solid rgba(57, 111, 95, 0.3);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 1.5rem;
+        }
+
+        .email {
+            color: var(--secondary-color);
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            font-size: 1.1rem;
+        }
+
+        .email:hover {
+            color: var(--primary-color);
+            transform: translateY(-2px);
+        }
+
+        footer {
+            text-align: center;
+            padding: 2.5rem;
+            margin-top: 3rem;
+            color: var(--background-color);
+            font-size: 0.9rem;
+            background: linear-gradient(135deg, var(--primary-color) 30%, var(--secondary-color) 100%);
+        }
+
+        .attention-note {
+            background-color: rgba(57, 111, 95, 0.1);
+            border-radius: var(--border-radius);
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border-left: 4px solid var(--secondary-color);
+        }
+
+        .attention-note p {
+            margin: 0;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                margin: 2rem 1rem;
+            }
+
+            header h1 {
+                font-size: 2rem;
+            }
+
+            .content-wrapper {
+                padding: 1.5rem;
+            }
+            
+            .section {
+                padding: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>MarkMe</h1>
+        <p class="subtitle">Terms and Conditions</p>
+    </header>
+    
+    <div class="container">
+        <div class="content-wrapper">
+
+            <p class="welcome-text">
+                Welcome to MarkMe. These Terms and Conditions govern your use of the app. By using the app, you agree to these Terms. If you do not agree, please refrain from using the application.
+            </p>
+            
+            <div class="section">
+                <div class="section-title">1. Purpose of the App</div>
+                <p>MarkMe is designed to streamline student attendance using face recognition technology. Additionally, it provides academic assistance through an AI-powered model and allows students to track their attendance and performance.</p>
+            </div>
+            
+            <div class="section">
+                <div class="section-title">2. User Eligibility</div>
+                <ul>
+                    <li>You must be a registered student of the institution.</li>
+                    <li>Your facial data (embedding) must be enrolled in the system by authorized personnel.</li>
+                    <li>Access to the app is restricted to authorized users only.</li>
+                </ul>
+            </div>
+            
+            <div class="section">
+                <div class="section-title">3. Attendance Marking Process</div>
+                <ul>
+                    <li>Students upload their images to generate facial embeddings.</li>
+                    <li>Attendance is marked automatically when your face is recognized at the classroom entrance.</li>
+                    <li>In case of technical issues, manual attendance may be taken by faculty.</li>
+                </ul>
+            </div>
+            
+            <div class="section">
+                <div class="section-title">4. Academic Assistance</div>
+                <ul>
+                    <li>The app includes an AI-powered model to answer questions related to the academic calendar, course curriculum, and other academic topics.</li>
+                    <li>Responses are generated based on institutional data and may not always be accurate. Verify critical information with faculty.</li>
+                </ul>
+            </div>
+            
+            <div class="section">
+                <div class="section-title">5. Data Collection and Privacy</div>
+                <ul>
+                    <li>The app collects and stores facial embeddings and images for attendance purposes.</li>
+                    <li>All data is processed securely and used solely for academic purposes.</li>
+                    <li>The app complies with institutional data protection policies and applicable privacy laws.</li>
+                    <li>Attendance records and other personal data are accessible only to authorized personnel.</li>
+                </ul>
+            </div>
+            
+            <div class="section">
+                <div class="section-title">6. Student Responsibilities</div>
+                <ul>
+                    <li>Ensure your face is visible and unobstructed during attendance capture.</li>
+                    <li>Do not attempt to bypass or misuse the system.</li>
+                    <li>Report any technical issues or errors to the faculty or IT team.</li>
+                    <li>Use the AI-powered model responsibly and avoid asking irrelevant or inappropriate questions.</li>
+                </ul>
+            </div>
+            
+            <div class="section">
+                <div class="section-title">7. Limitations</div>
+                <p>The system may not function as intended under the following conditions:</p>
+                <ul>
+                    <li>Poor lighting or obstructed facial visibility.</li>
+                    <li>Technical issues with the device or network.</li>
+                    <li>Inaccurate or incomplete data provided by the user.</li>
+                </ul>
+            </div>
+            
+            <div class="section">
+                <div class="section-title">8. Misuse and Disciplinary Action</div>
+                <ul>
+                    <li>Tampering with the system or impersonating others is strictly prohibited.</li>
+                    <li>Such actions may lead to disciplinary measures as per institutional policy.</li>
+                    <li>Attempting to extract or misuse data from the system is a violation of these terms.</li>
+                </ul>
+            </div>
+                        
+            <div class="section">
+                <div class="section-title">9. Changes to Terms</div>
+                <p>We may update these Terms occasionally. Your continued use of the app implies acceptance of the updated terms.</p>
+            </div>
+            
+            <div class="section">
+                <div class="section-title">10. Contact</div>
+                <p>For concerns or support, contact your faculty advisor or IT department.</p>
+                <div class="contact-info">
+                    <a href="mailto:thewallseye@gmail.com" class="email">📧 thewallseye@gmail.com</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <p>© 2025 The Wall's Eye. All rights reserved.</p>
+    </footer>
+</body>
+</html>
